@@ -1,4 +1,4 @@
-# new_intranet
+# Vite Vue App
 
 ## Project setup
 ```
