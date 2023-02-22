@@ -16,7 +16,7 @@
             <div class="field">
               <div class="p-input-icon-right">
                 <i class="pi pi-envelope" />
-                <InputText id="email" v-model="email" type="email" placeholder="Email" />
+                <InputText id="email" v-model="username" type="email" placeholder="Email" />
               </div>
             </div>
             <div class="field">
@@ -43,7 +43,7 @@
               <Checkbox id="accept" v-model="accept" name="accept" value="Accept" />
               <label for="accept">I agree to the terms and conditions*</label>
             </div>-->
-            <Button type="submit" label="Entrar" class="mt-2" />
+            <Button type="submit" label="Entrar" class="mt-2" @click="doLogin" />
           </div>
         </div>
       </div>
@@ -58,15 +58,23 @@ import Button from "primevue/button";
 import Card from "primevue/card"
 //import Image from 'primevue/image';
 
-import {ref} from "vue";
+import {reactive, ref} from "vue";
+import {jwt$} from "../../ts/auth";
+import {loginApi} from "../../api/authentication";
+import {useRouter} from "vue-router";
 
 const name = ref(null)
-const email = ref(null)
+const username = ref(null)
 const password = ref(null)
 const accept = ref(null)
+const router = useRouter();
+const formState = reactive({email: username, password: password});
+
 
 function doLogin() {
-
+  loginApi(formState)
+  console.log(jwt$.subscribe(console.log), "MAMA_MIA")
+  router.push("/");
 }
 
 function doRegister() {
