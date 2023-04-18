@@ -1,0 +1,69 @@
+/*
+ | Váriaveis da SASS api do PrimeVue 
+ | see: https://www.primefaces.org/designer/api/primevue/3.0.0
+ |
+ | Essas variáveis são usadas internamene nos componentes do
+ | PrimeVue e alteralas altera todo o estilo de vário componentes
+ | portanto é ideal utiliza-las para alterar CSS em runtime
+*/
+
+// -------------------------------- PRIME VUE VARIABLES --------------------------------
+
+/* General */
+$fontSize: 14px;
+$borderRadius: 3px;
+
+$textColor: #333333;
+$bodyBgColor: #24252a;
+$maskBgColor: #424242;
+$dividerColor: #666666;
+$focusShadowColor:  #8dcdff;
+$textSecondaryColor: #707070;
+
+$transitionDuration: 0.2s;
+
+/* Menu Common */
+$submenuFontSize: 13px;
+$menuitemBadgeColor: #ffffff;
+$menuitemBadgeBgColor: #FFEB38;
+$menuitemActiveRouteColor: #1fa1fc;//
+
+/* Menu Light */
+$menuitemColor: #232428;
+$menuBgColorLast: #f3f3f3;
+$menuBgColorFirst: #f3f3f3;
+$menuitemHoverColor: #0388e5;
+$menuitemActiveColor: #0388e5;
+$menuitemBorderColor: #cfd3e099;
+$menuitemActiveBgColor: #ffffff;
+
+/* Menu Dark */
+$menuitemDarkColor: #ffffff;//cores items menu
+$menuDarkBgColorLast: #24252a;
+$menuDarkBgColorFirst: #24252a;
+$menuitemDarkHoverColor: #0388e5;//
+$menuitemDarkActiveColor: #0388e5;//
+$menuitemDarkActiveBgColor: #2e3035;
+$menuitemDarkBorderColor: #34384199;
+
+/* Topbar */
+$topbarItemColor: #ffffff;//tres pausin top
+$topbarLeftBgColor: #e0b400;
+$topbarRightBgColor: #f3c200;
+$topbarItemBadgeColor: #ffffff;
+$topbarItemHoverColor:  #c3e8fb;
+$topbarItemBadgeBgColor: #ef6262;
+$topbarSearchInputColor: #ffffff;
+$topbarSearchInputBorderBottomColor: #ffffff;
+
+/* Footer */
+$footerBgColor: #ffffff;
+
+// -------------------------------- CUSTOM VARIABLES --------------------------------
+$viewSupplierColor: #ffffff;
+$topBarRoadViewBgDarkColor: #24252A;
+
+
+
+/* Login */
+$loginColor: #FFFFFF;
